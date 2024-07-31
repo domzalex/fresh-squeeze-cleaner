@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/output.css">
+    <title>Fresh Squeezed Cleaning Service</title>
+</head>
+<body class="h-screen flex justify-center">
+
+    <nav class="top-0 left-0 bg-[#F4EBE6] flex justify-between items-center py-3 px-6 fixed w-full z-20">
+        <a href="/">
+            <img src="../static/img/logo-trans.svg" alt="Fresh Squeezed Logo" class="h-10 md:h-20">
+        </a>
+        <ul class="flex gap-12">
+            <!-- <a href="#main-info" class="text-[rgb(166,154,206)] font-bold text-2xl hover:text-[rgb(125,112,164)]">Services</a> -->
+            <a href="#contact" class="text-[rgb(166,154,206)] font-bold text-sm md:text-2xl hover:text-[rgb(125,112,164)]">Contact</a>
+        </ul>
+    </nav>
+    
+    <div id="background" class="absolute top-16 md:top-0 left-0 w-full h-2/3 md:h-3/5 z-0 overflow-hidden">
+        <img src="../static/img/light-blob.svg" alt="" class="absolute w-1/2 md:max-w-[700px] bottom-[-75px] md:bottom-[-425px] left-[-75px] md:left-[-250px] light-blob">
+        <img src="../static/img/light-blob.svg" alt="" class="absolute w-1/2 md:max-w-[700px] top-[-75px] md:top-[-300px] right-[-75px] md:right-[-325px] light-blob">
+        <img src="../static/img/lemon-full.svg" alt="" id="lemon-full-hero" class="absolute w-2/5 md:max-w-[400px] bottom-[50px] md:bottom-[-200px] right-[20px] md:right-[100px]">
+    </div>
+
+    <div class="w-full max-w-[1920px]">
+        <section id="hero" class="w-full h-2/3 md:h-3/5 flex justify-center items-center z-10 bg-[rgb(250,226,148)] pt-16 md:pt-24">
+            <div class="flex w-4/5 justify-evenly items-center">
+                <div class="w-full">
+                    <div class="relative">
+                        <!-- <img src="../static/img/alyssa.png" alt="photo of owner"> -->
+                        <h1 class="text-7xl md:text-9xl font-['more-sugar-reg'] text-center text-[rgb(125,112,164)]">Need a<br>Fresh Start?</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </section>
+        <section id="main-info-container" class="w-full h-full md:h-2/5 relative flex flex-col md:flex-row">
+            <div class="w-full absolute top-[-37px] md:top-[-56px] flex justify-center">
+                <div class="bg-[rgb(125,112,164)] rounded-2xl p-4 md:p-8 flex gap-6 items-center">
+                    <h1 class="font-['more-sugar-reg'] text-white text-3xl md:text-5xl">What I Do!</h1>
+                    <img src="../static/img/lemon-half.svg" alt="" class="w-[40px] md:w-[60px] pb-2">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-full max-h-[800px] bg-[#F4EBE6] flex items-center justify-center">
+                <img src="" alt="">
+                <div class="w-4/5">
+                    <h3 class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-4xl md:text-5xl pb-2">I clean:</h3>
+                    <ul class="columns-2 list-none m-0 p-0">
+                        <li class="font-['more-sugar-thin'] text-[rgb(166,154,206)] text-3xl md:text-4xl py-3">Residences</li>
+                        <li class="font-['more-sugar-thin'] text-[rgb(166,154,206)] text-3xl md:text-4xl py-3">Office Spaces</li>
+                        <li class="font-['more-sugar-thin'] text-[rgb(166,154,206)] text-3xl md:text-4xl py-3">AirBnB's & Rentals</li>
+                        <li class="font-['more-sugar-thin'] text-[rgb(166,154,206)] text-3xl md:text-4xl py-3">And more!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-full max-h-[800px] bg-[#85D2D0] flex items-center justify-center">
+                <img src="" alt="">
+                <div class="w-4/5">
+                    <h3 class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-4xl md:text-5xl pb-2">Scheduling:</h3>
+                    <ul class="list-none m-0 p-0">
+                        <li class="font-['more-sugar-thin'] text-[white] text-3xl md:text-4xl py-3">One-Time Cleanings</li>
+                        <li class="font-['more-sugar-thin'] text-[white] text-3xl md:text-4xl py-3">Weekly, Bi-Weekly, & Monthly Cleanings</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="w-full md:h-4/5 relative flex bg-green-300 justify-evenly items-center py-16 md:py-0 gap-16 md:gap-0 flex-col md:flex-row">
+            <div class="flex flex-col w-4/5 md:w-2/5 gap-9 px-6 md:px-0">
+                <div class="flex items-center gap-3">
+                    <img src="../static/img/lemon-half.svg" alt="" class="w-[64px] md:w-[96px]">
+                    <h2 class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-2xl md:text-4xl">Servicing Northwest GA</h2>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img src="../static/img/lemon-half.svg" alt="" class="w-[64px] md:w-[96px]">
+                    <h2 class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-2xl md:text-4xl">Ask about my organizing services!</h2>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img src="../static/img/lemon-half.svg" alt="" class="w-[64px] md:w-[96px]">
+                    <h2 class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-2xl md:text-4xl"><a href="tel:+17066768902" class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-2xl md:text-4xl underline">Call</a> or <a href="mailto:freshsqueezecleaner@gmail.com" class="font-['more-sugar-reg'] text-[rgb(125,112,164)] text-2xl md:text-4xl underline">email</a> to schedule an estimate!</h2>
+                </div>
+            </div>
+            <div id="form" class="w-4/5 md:w-2/5 bg-[#F4EBE6] rounded-2xl relative">
+                <div id="contact" class="absolute top-[-100px] md:top-[-150px]"></div>
+                <h2 class="text-[rgb(125,112,164)] text-3xl md:text-4xl font-['more-sugar-reg'] text-center py-4 pt-7 border-b border-[rgba(166,154,206,0.3)]">Send Me A Message</h2>
+                <div id="spinner" class="my-indicator absolute top-0 left-0 rounded-2xl w-full h-full items-center justify-center"><div id="spinner-inner"></div></div>
+                <form hx-post="/sendMail" hx-target="#form" hx-indicator="#spinner" class="flex flex-col items-center gap-6 p-6 z-0">
+                    <input type="text" name="name" id="" placeholder="Name" required class="rounded-lg p-2 text-2xl w-full text-[rgb(166,154,206)]">
+                    <input type="text" name="email" id="" placeholder="Email" required class="rounded-lg p-2 text-2xl w-full text-[rgb(166,154,206)]">
+                    <textarea name="message" required id="" rows="4" placeholder="Message" class="rounded-lg p-2 text-2xl w-full resize-none text-[rgb(166,154,206)]"></textarea>
+                    <button type="submit" class="bg-[rgb(166,154,206)] hover:bg-[rgb(125,112,164)] max-w-[200px] text-white font-['more-sugar-reg'] text-2xl pt-3 pb-2 px-6 rounded-lg">Reach Out!</button>
+                </form>
+            </div>
+        </section>
+        <footer class="bg-[#F4EBE6] w-full h-[350px] flex items-center justify-center relative">
+            <div class="flex items-center gap-6">
+                <h1 class="text-[rgb(166,154,206)] font-['more-sugar-reg'] text-3xl md:text-5xl text-center z-10">Thank you for supporting<br>a small business.</h1>
+                <img src="../static/img/heart.png" alt="" class="absolute left-[50%] translate-x-[-62px] md:translate-x-[0] md:left-[auto] md:relative w-[125px] z-0 opacity-25 md:opacity-100">
+            </div>
+            <p class="absolute bottom-[10px] text-[rgb(166,154,206)] font-['more-sugar-reg'] text-center text-lg">Made with ❤️ by <a href="https://www.studioazure.io" target="_blank" class="font-['more-sugar-reg'] hover:text-[rgb(125,112,164)] underline">Studio Azure</a>.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

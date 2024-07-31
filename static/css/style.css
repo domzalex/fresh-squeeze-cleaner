@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "more-sugar-reg";
+    src: url('../fonts/more-sugar-reg.ttf');
+}
+
+@font-face {
+    font-family: "more-sugar-thin";
+    src: url('../fonts/more-sugar-thin.ttf');
+}
+
+* {
+    font-family: "more-sugar-thin";
+}
+
+.my-indicator{
+    display:none;
+    background-color: #F4EBE6;
+}
+.htmx-request .my-indicator{
+    display:flex;
+}
+.htmx-request.my-indicator{
+    display:flex;
+}
+
+#spinner-inner {
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(166,154,206);
+    border-radius: 50%;
+    border-top-color: rgb(125,112,164);
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+
+
+@keyframes spin-lemon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
+@keyframes spin-lemon-two {
+    0% { transform: rotate(25deg); }
+    50% { transform: rotate(-25deg); }
+    100% { transform: rotate(25deg); }
+}
+
+#lemon-full-hero {
+    animation-name: spin-lemon-two;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.light-blob {
+    animation-name: spin-lemon;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+textarea {
+    resize: none;
+}
