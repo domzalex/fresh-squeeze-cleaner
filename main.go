@@ -23,7 +23,7 @@ func sendMail(name string, email string, message string) {
 
 	m := gomail.NewMessage()
 	m.SetHeader("From", "freshsqueezecleaner@gmail.com")
-	m.SetHeader("To", "alexdomzalski@gmail.com") // Can add more recipients with a comma
+	m.SetHeader("To", "freshsqueezecleaner@gmail.com") // Can add more recipients with a comma
 
 	// m.SetAddressHeader("Cc", "dan@example.com", "Dan") -- If needing to CC
 
